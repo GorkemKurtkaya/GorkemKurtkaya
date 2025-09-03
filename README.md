@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Görkem Kurtkaya</h1>
 <h3 align="center">A passionate Backend Developer from Turkey</h3>
 
-- 📫 How to reach me **gorkem.kurtkaya@yahoo.com**
+- 📫 How to reach me **gorkem.kurtkaya@yahoo.com** / **www.gorkemkurtkaya.com**
 
 
 
