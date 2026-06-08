@@ -27,7 +27,8 @@ focus:
   - Cloud Architecture
   - Clean, maintainable code
 currently_learning: System Design & Distributed Systems
-reach_me: gorkem.kurtkaya@yahoo.com
+reach_me: gorkemkurtkayaa@gmail.com
+
 ```
 
 ---
