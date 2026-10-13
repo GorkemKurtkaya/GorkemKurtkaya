@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 46" width="152" height="46" role="img" aria-label="Portfolio">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C4566A"/><stop offset="1" stop-color="#F6A65A"/></linearGradient></defs>
+  <rect x="1" y="1" width="150" height="44" rx="22" fill="url(#g)" stroke="none" stroke-width="1.5"/>
+  <g color="#FFF6EA"><g transform="translate(24 14) scale(0.75)"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c3 3.2 3 15.8 0 19M12 2.5c-3 3.2-3 15.8 0 19"/></g></g></g>
+  <text x="52" y="28.5" font-family="'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, sans-serif" font-size="15" font-weight="600" letter-spacing=".4" fill="#FFF6EA">Portfolio</text>
+</svg>

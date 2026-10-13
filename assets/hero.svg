@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img" aria-label="Sunset over the Aegean. Görkem Kurtkaya, backend developer, İzmir.">
+  <style>
+    .name { font-family: 'Avenir Next', 'Segoe UI Light', 'Segoe UI', 'Helvetica Neue', Helvetica, sans-serif; font-weight: 300; font-size: 56px; letter-spacing: 3px; fill: #FFF6EA; text-anchor: middle; }
+    .sub { font-family: 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 5px; fill: #FFE3C2; text-anchor: middle; }
+    .fade { opacity: 0; animation: fade 1.6s ease-out forwards; }
+    .w1 { animation: drift 16s linear infinite; }
+    .w2 { animation: drift 11s linear infinite reverse; }
+    .w3 { animation: drift 7s linear infinite; }
+    .star { animation: twinkle 3.2s ease-in-out infinite; }
+    .glint { animation: glint 4s ease-in-out infinite; transform-origin: 440px 0; }
+    @keyframes fade { to { opacity: 1; } }
+    @keyframes drift { to { transform: translateX(-220px); } }
+    @keyframes twinkle { 50% { opacity: .15; } }
+    @keyframes glint { 50% { transform: scaleX(.72); opacity: .45; } }
+    @media (prefers-reduced-motion: reduce) { .fade { opacity: 1; } .fade, .w1, .w2, .w3, .star, .glint { animation: none; } }
+  </style>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12122E"/>
+      <stop offset=".42" stop-color="#46285C"/>
+      <stop offset=".78" stop-color="#C4566A"/>
+      <stop offset="1" stop-color="#F6A65A"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFF1C9"/>
+      <stop offset=".55" stop-color="#FFC56B"/>
+      <stop offset="1" stop-color="#F6853F"/>
+    </radialGradient>
+    <radialGradient id="halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFC56B" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#FFC56B" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="card"><rect width="880" height="400" rx="14"/></clipPath>
+    <clipPath id="above"><rect width="880" height="272"/></clipPath>
+    <path id="wave" d="M0 20Q55 0 110 20T220 20T330 20T440 20T550 20T660 20T770 20T880 20T990 20T1100 20T1210 20T1320 20V160H0Z"/>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="880" height="272" fill="url(#sky)"/>
+
+    <g fill="#FFF6EA">
+      <circle class="star" cx="92" cy="48" r="1.4"/>
+      <circle class="star" cx="208" cy="92" r="1" style="animation-delay:.8s"/>
+      <circle class="star" cx="318" cy="34" r="1.2" style="animation-delay:1.7s"/>
+      <circle class="star" cx="566" cy="42" r="1.1" style="animation-delay:.4s"/>
+      <circle class="star" cx="684" cy="84" r="1.4" style="animation-delay:2.2s"/>
+      <circle class="star" cx="792" cy="38" r="1" style="animation-delay:1.2s"/>
+      <circle class="star" cx="838" cy="118" r="1.1" style="animation-delay:2.6s"/>
+      <circle class="star" cx="44" cy="128" r="1" style="animation-delay:1.9s"/>
+    </g>
+
+    <g clip-path="url(#above)">
+      <circle cx="440" cy="272" r="170" fill="url(#halo)"/>
+      <circle cx="440" cy="272" r="62" fill="url(#sun)"/>
+    </g>
+
+    <!-- sea -->
+    <rect y="272" width="880" height="128" fill="#1B3A63"/>
+    <g class="glint" fill="#FFC56B">
+      <rect x="392" y="282" width="96" height="3" rx="1.5" opacity=".9"/>
+      <rect x="404" y="294" width="72" height="3" rx="1.5" opacity=".7"/>
+      <rect x="416" y="306" width="48" height="3" rx="1.5" opacity=".5"/>
+    </g>
+    <g transform="translate(0 296)"><use href="#wave" class="w1" fill="#16325A" opacity=".92"/></g>
+    <g transform="translate(0 322)"><use href="#wave" class="w2" fill="#102848"/></g>
+    <g transform="translate(0 350)"><use href="#wave" class="w3" fill="#0A1B2E"/></g>
+
+    <text x="440" y="126" class="name fade" style="animation-delay:.2s">Görkem Kurtkaya</text>
+    <text x="440" y="162" class="sub fade" style="animation-delay:.7s">BACKEND DEVELOPER · İZMİR</text>
+  </g>
+</svg>
